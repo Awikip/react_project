@@ -26,7 +26,7 @@ export default class User extends React.Component<IUserProps> {
 
   private TogglePresence = () => {
     this.setState({
-      presence: !this.state.present,
+      present: !this.state.present,
     });
   };
 }
