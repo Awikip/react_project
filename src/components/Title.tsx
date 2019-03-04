@@ -5,10 +5,12 @@ export interface ITitleProps {
   content: string;
 }
 
-class Title extends React.Component<ITitleProps> {
-  public render() {
-    return <h1>{this.props.content}</h1>;
-  }
-}
+// class Title extends React.Component<ITitleProps> {
+//   public render() {
+//     return <h1>{this.props.content}</h1>;
+//   }
+// }
+
+const Title = ({ content }: ITitleProps) => <h1>{content}</h1>;
 
 export default Title;
