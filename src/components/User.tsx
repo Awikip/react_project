@@ -14,7 +14,7 @@ export default class User extends React.Component<IUserProps> {
     return (
       <div>
         <p>
-          User: <b>{this.props.name}</b>
+          User: <b>{this.props.name}</b> {'\n'}
           {this.props.name} is {!this.state.present ? 'not' : ''} present
         </p>
         <button onClick={this.TogglePresence}>
